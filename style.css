@@ -14,7 +14,7 @@
   opacity: 0;
   top: -100px;
   padding-bottom: 6px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Geologica", sans-serif;
 }
 @media only screen and (max-width: 766px) {
   .main_h {
@@ -31,16 +31,15 @@
 }
 
 .sticky {
-  background-color: rgba(255, 255, 255, 0.93);
+  background-color: var(--bg-color);
   opacity: 1;
   top: 0px;
-  border-bottom: 1px solid gainsboro;
 }
 
 .logo {
   width: 50px;
   font-size: 25px;
-  color: #8f8f8f;
+  color: var(--txt-color);
   text-transform: uppercase;
   float: left;
   display: block;
@@ -90,10 +89,17 @@ nav ul li {
     margin: 0;
   }
 }
+a{
+  text-decoration: none;
+}
 nav ul a {
-  color: #888888;
+  color: var(--sub-txt);
   text-transform: uppercase;
   font-size: 12px;
+  transition: 0.3s;
+}
+nav ul a:hover{
+  color: var(--main-color)  ;
 }
 
 .mobile-toggle {
