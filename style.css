@@ -118,6 +118,9 @@ nav ul a:hover{
   .mobile-toggle {
     display: block;
   }
+  .logo{
+    margin-left: 20px;
+  }
 }
 .mobile-toggle span {
   width: 30px;
@@ -143,6 +146,8 @@ nav ul a:hover{
     font-family: "Geologica", sans-serif;
     font-style: normal;
 }
+
+
 
 :root{
     --bg-color: #000;
@@ -198,7 +203,12 @@ section{
 .item:hover{
     background-color: transparent;
 }
-
+#home{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 /*main*/
 
 h1{
@@ -216,9 +226,11 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 100px auto 0 auto;
     z-index: 999;
-    
+
+}
+#home img{
+  width: 100px;
 }
 .main .i-am{
     align-self: flex-start;
@@ -387,7 +399,7 @@ h3{
   height: auto;
 }
 .gallery-circle{
-    top: 50%;
+    top: 0;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 1.2em;
@@ -809,4 +821,8 @@ footer p {
     .menu li{
       margin: 9px 0;
     }
+    #footer{
+      height: 60vh;
+    }
+
 }
