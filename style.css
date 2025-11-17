@@ -400,7 +400,7 @@ h3{
   height: auto;
 }
 .gallery-circle{
-    top: 0;
+    top: 50%;
     left: 0;
     transform: translate(-50%,-50%);
     width: 1.2em;
@@ -420,7 +420,7 @@ h3{
   min-height: 100vh;
 }
 .gallery__strip__wrapper {
-  flex: 0 0 25%;
+  flex: 0 0 50%;
   justify-content: flex-end;
   background: transparent;
   border-right: 2px solid #333;
