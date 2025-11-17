@@ -157,11 +157,11 @@ nav ul a:hover{
 }
 body{
     overflow-x: hidden;
+    background-color: var(--bg-color);
 }
 section{
     position: relative;
     height: 100vh;
-    background-color: var(--bg-color);
     width: 100%;
     padding: 20px;
     overflow-x: hidden;
@@ -267,21 +267,34 @@ h2{
     top: -200px;
     left: 10px;
     background: conic-gradient(from 180deg at 50% 50%, var(--main-color) 0deg, #00F0FF 120.07deg, #0077FF 179.52deg, #FF0099 241.65deg, #0470E5 299.6deg, #00FFC2 360deg);
+    background-size: 240% 240%;
     border-radius: 50%;
     font-size: 250px;
     height: 2em;
     width: 2em;
     filter: blur(200px);
     z-index: 1;
+    animation: gradient 10s ease infinite;
+}
+@keyframes gradient{
+  0% {
+			background-position: 0% 50%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+		100% {
+			background-position: 0% 50%;
+		}
 }
 
 /*about*/
 
 .about-circle{
     top: 250px;
-    left: 85vw;
-    width: 1.2em;
-    height: 1.2em;   
+    left: 80vw;
+    width: .9em;
+    height: .9em;   
 }
 
 h3{
@@ -403,8 +416,8 @@ h3{
     top: 50%;
     left: 0;
     transform: translate(-50%,-50%);
-    width: 1.2em;
-    height: 1.2em;   
+    width: 1em;
+    height: 1em;   
 }
 .gallery {
   display: flex;
@@ -500,9 +513,11 @@ h3{
   height: 80vh;
   position: relative;
   display: flex;
+
   justify-content: center;
   align-items: center;
 }
+
 .skills-box{
   width: 45%;
 }
@@ -640,7 +655,7 @@ h3{
 
 /* footer */
 #footer{
-  height: 40vh;
+  height: 50vh;
 }
 footer {
     position: relative;
@@ -657,7 +672,7 @@ footer {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .social li {
@@ -680,7 +695,7 @@ footer {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .menu li {
