@@ -18,10 +18,10 @@
 /* scroll-animation */
 
 .autoShow{
-  animation-timeline: scroll(root);
+  animation-timeline: scroll();
 
   animation-name: text-appear;
-  animation-range: entry 10% contain 25%;
+  animation-range: entry 10% cover 10%;
   animation-fill-mode: both;
   animation-duration: 1ms;
 

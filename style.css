@@ -401,7 +401,7 @@ h3{
 }
 .gallery-circle{
     top: 0;
-    left: 50%;
+    left: 0;
     transform: translate(-50%,-50%);
     width: 1.2em;
     height: 1.2em;   

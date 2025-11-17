@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/8c553dc78b.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
@@ -76,12 +77,12 @@
     
     <section id="about">
         <div class="circle about-circle"></div>
-        <div class="container">
-            <img src="img/2.jpg">
-            <div class="info autoShow">
-                <h3 class="autoShow">WHO AM I?</h3>
-                <h2>My photography blends artistry and storytelling, using light, color, and perspective to create striking and meaningful images.</h2>
-                <div class="btn"><a href="cv.pdf" target="_blank">DOWNLOAD CV <i class="fa-solid fa-file-pdf"></i></a></div>
+        <div class="container" >
+            <img src="img/2.jpg" data-aos="fade-right">
+            <div class="info">
+                <h3 data-aos="fade-up">WHO AM I?</h3>
+                <h2 data-aos="fade-up">My photography blends artistry and storytelling, using light, color, and perspective to create striking and meaningful images.</h2>
+                <div class="btn" data-aos="fade-up"><a href="cv.pdf" target="_blank">DOWNLOAD CV <i class="fa-solid fa-file-pdf"></i></a></div>
             </div>
         </div>
     </section>
@@ -89,7 +90,7 @@
 
     <section id="gallery">
         <div class="circle gallery-circle"></div>
-        <h3 style="text-align: center;">GALLERY</h3>
+        <h3 style="text-align: center; margin-bottom: 50px;" data-aos="fade-up">GALLERY</h3>
        <div class="gallery">
         <div class="gallery__strip__wrapper">
             <div class="gallery__strip one">
@@ -173,12 +174,12 @@
     </section>
     
     <section id="skills">
-        <div class="skills-box">
+        <div class="skills-box" data-aos="fade-right">
             <h3>SKILLS</h3>
             <h2>Showcasing a diverse set of technical and creative skills developed through hands-on experience and continuous learning.</h2>
 
         </div>
-        <div class="skill-bars">
+        <div class="skill-bars" data-aos="fade-left">
             <div class="bar">
                 <div class="s-info">
                 <span>HTML</span>
@@ -247,6 +248,10 @@
     </section>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
     
