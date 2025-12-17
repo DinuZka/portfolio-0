@@ -630,19 +630,19 @@ h3 {
     opacity: 1;
   }
 }
-.progress-line.html span::after {
+.progress-line.ps span::after {
   content: "90%";
 }
-.progress-line.css span::after {
+.progress-line.lm span::after {
   content: "60%";
 }
-.progress-line.jquery span::after {
+.progress-line.ill span::after {
   content: "85%";
 }
-.progress-line.python span::after {
+.progress-line.pp span::after {
   content: "50%";
 }
-.progress-line.mysql span::after {
+.progress-line.ae span::after {
   content: "75%";
 }
 
